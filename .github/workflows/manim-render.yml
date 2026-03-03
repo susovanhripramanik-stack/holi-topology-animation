@@ -11,6 +11,7 @@ jobs:
 
     container:
       image: manimcommunity/manim:stable
+      options: --user root   # ✅ Fix permission issue
 
     steps:
     - name: Checkout repository
